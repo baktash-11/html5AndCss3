@@ -49,7 +49,9 @@
            padding-top: 20px;
            color: rgba(105, 105, 105, 0.705);
        }
-       
+       ul #title{
+           margin-left: 10%;
+       }
        
     </style>
 </head>
@@ -73,6 +75,8 @@
 
 
         </ol>
+
+        
 
 
     </div>
@@ -132,9 +136,9 @@
                     
                     <label for="rock">Rock</label>
                     <input type="radio" name="genre" value="rock" id="rock" /> <br>
-                    <label for="pop">Pop</label>
+                    <label for="pop">Pop &nbsp;</label>
                     <input type="radio" name="genre" value="pop" id="pop" /> <br>
-                    <label for="jazz">Jazz</label>
+                    <label for="jazz">Jazz &nbsp;</label>
                     <input type="radio" name="genre" value="jazz" id="jazz" />
                 </div>
                 <!-- <img src="https://picsum.photos/id/106/800/40" alt=""> -->
@@ -182,14 +186,25 @@
                     <option value="flute">Flute</option>
                 </select>
                 <br><br>
-        
-        
-        
+                
+                <h2 id="heading2">File Input Box</h2>
+                <p id="title">Upload your song in MP3 format:</p>
+                <input type="file" name="user-song" /><br /><br>
+
+                <h2 id="heading2" >Submit Button</h2>
+                <div id="button">
+                    <input type="submit" value="Submit" class="btn" name="sbumit" />
+                </div>
+                
+                <br><br>
+                    
+                    
+                    
             </form>
             <img src="https://picsum.photos/id/1011/800/40" alt="">
-
-        </div>
-         
+                    
+         </div>
+                    
         <ul>
             <li>The input element is used to create several differnet form controls. The value of the type attribute determines what kind of input they  will be creating.</li>
             <li>Type = "text": is used when the type attribute has value of text, it creates a single line text input.</li>
@@ -240,27 +255,21 @@
 
         </ul>
         <img src="https://picsum.photos/id/1058/800/40" alt="fire">
+        <ul>
+            <li>If you want to allow user to upload a file(for example an image, mp3 or a PDF file), you will need to use a file input box.</li>
+            <li>this type of input creates a box that looks like a text input followed by a browse button.</li>
+            <p id="title" >If the form consest of input typle file, form element must have that value of post. A file can't be send on HTTP get method.</p>
+            
+            
            
+        </ul> 
         
        
 
 
     </div>
     
-     <!-- <xmp><select></xmp> -->
-    <!-- <img src="https://picsum.photos/id/548/600/400" alt="">
-    <img src="https://picsum.photos/id/1011/600/400" alt="">
-    <img src="https://picsum.photos/id/1012/600/400" alt="">
-    <img src="https://picsum.photos/id/334/600/400" alt="">
-    <img src="https://picsum.photos/id/550/600/400" alt="">
-    <img src="https://picsum.photos/id/602/600/400" alt="">
-    <img src="https://picsum.photos/id/633/600/400" alt="">
-    <img src="https://picsum.photos/id/64/600/400" alt="">
-    <img src="https://picsum.photos/id/660/600/400" alt="fire">
-    <img src="https://picsum.photos/id/823/600/400" alt="">
-    <img src="https://picsum.photos/id/832/600/400" alt="">
-    <img src="https://picsum.photos/id/839/600/400" alt=""> -->
-    <!-- <img src="https://picsum.photos/id/1058/600/400" alt=""> -->
+     
     
     <h1 id="heading2">Welcome Forms in the HTML</h1>
     <div id="links">

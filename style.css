@@ -120,6 +120,38 @@ body {
   
 }
 
+ #button input{
+  all: unset;
+  border-radius: 20px;
+  height: 30px;
+  width: 200px;
+  padding: 10px 10px 20px 10px;
+  border: 2px solid #BFBFBF;
+  background-color:rgba(47, 79, 79, 0.753);
+  color: whitesmoke;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  /* box-shadow:-3px 2px darkslategray, -.7em 0 .6em darkslategray; */
+  
+  
+  
+}
+
+#button input:hover{
+  all: unset;
+  border-radius: 20px;
+  background-color: darkslategray;
+  height: 30px;
+  width: 200px;
+  padding: 10px 10px 20px 10px;
+  border: 2px solid #1af3b2;
+  box-shadow: 8px 8px 5px #aaaaaa;
+  color: #1af3b2;
+  /* box-shadow:-3px 2px darkslategray, -.7em 0 .6em darkslategray; */
+  
+  
+  
+}
+
 /* Table */
 table,th,td {
   border: 1px solid darkslategrey;
