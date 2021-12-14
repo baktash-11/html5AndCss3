@@ -152,6 +152,7 @@ body {
   
 }
 
+
 /* Table */
 table,th,td {
   border: 1px solid darkslategrey;
@@ -170,7 +171,21 @@ hr{
 ul{
     list-style-type: disc;
 }
+#groupForm{
+  display: inline-block;
+  margin-left: 35%;
+ 
+  
+  
+}
 
+               
+#groupForm fieldset{
+  
+  background-color: whitesmoke;
+  color: black;
+  
+}
 /* table#alter tr:nth-child(even) {
   background-color: #eee;
 }
