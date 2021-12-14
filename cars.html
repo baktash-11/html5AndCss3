@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+
+   
+   
+        <title>Week 1 and 2</title>
+ 
+    
+</head>
+<body>
+    <div id="mainBody">
+
+        <h1 id="heading1">Classes in ES6</h1>
+        <img src="https://picsum.photos/id/111/600/400" alt="">
+        <div id="output"></div>
+        <a id="btn" href="./index.html">Back</a>
+    </div>
+    
+    <script>
+        class Vehicle {
+            constructor(wheels) {
+                this.wheels = wheels;
+            }
+            toString() {
+                return 'Wheels: (' + this.wheels + ')';
+            }
+        }
+        class Car extends Vehicle {
+            constructor(color) {
+                super(4);
+                this.color = color;
+            }
+            toString() {
+                return super.toString() + ' colored: ' + this.color;
+            }
+        }
+        let car = new Car('Black');
+        document.getElementById('output').innerHTML = car.toString() + "<br>";;
+        document.getElementById('output').innerHTML += (car instanceof Car) + "<br>";
+        document.getElementById('output').innerHTML += (car instanceof Vehicle);
+    </script>
+
+    
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

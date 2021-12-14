@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
+    <link rel="stylesheet" href="./style.css">
+    <title>table</title>
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+            color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            margin: auto;
+            
+           
+        }
+        hr{
+            border:none;
+            
+            border-top: 3px dotted darkslategray;
+            width: 50%;
+
+        }
+        thead, th[scope=row]{
+            background-color: blanchedalmond;
+            color: darkslategray;
+        }
+        tfoot{
+            background-color: rgba(47, 79, 79, 0.575);
+            color: gold;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 id="heading1">Tables</h1>
+
+    <TABLE BORDER=1 RULES=COLS FRAME=BOX> 
+        <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th Tickets sold:</th>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <th>Total sales:</th>
+            <td>$600</td>
+            <td>$675</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2 id="heading2">Spanning Columns</h2>
+
+    <table border=1 cellpadding=4 rules= groups frame=box>
+        <tr>
+            <th></th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td colspan="2">Geography</td>
+            <td>Math</td>
+            <td>Art</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">Gym</td>
+            <td>Home Ec</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2 id="heading2">Spaning Grows</h2>
+    <table>
+        <tr>
+            <th></th>
+            <th>ABC</th>
+            <th>BBC</th>
+            <th>CNN</th>
+        </tr>
+        <tr>
+            <th>6pm - 7pm</th>
+            <td rowspan="2">Movie</td>
+            <td>Comedy</td>
+            <td>News</td>
+        </tr>
+        <tr>
+            <th>7pm - 8pm</th>
+            <td>Sport</td>
+            <td>Current Affairs</td>
+        </tr>
+    </table>
+    <hr>
+    <h2 id="heading2">Long Tabes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Income</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1st January</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th scope="row">2nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <!-- additional rows as above -->
+            <tr>
+                <th scope="row">31st January</th>
+                <td>129</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>7824</td>
+                <td>1241</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+    <h2 id="heading2">Table Example</h2>
+    <p>thead, tbody and tbody</p> 
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Home starter hosting</th>
+                <th scope="col">Premium business hosting</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Disk space</th>
+                <td>250mb</td>
+                <td>1gb</td>
+            </tr>
+            <tr>
+                <th scope="row">Bandwidth</th>
+                <td>5gb per month</td>
+                <td>50gb per month</td>
+            </tr>
+            <!-- more rows like the two above here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td colspan="2">Sign up now and save 10%!</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div id="links">
+        <a href="./index.html" >Index</a>
+        <a href="./structure.html" >Structure</a>
+        <a href="./forms.html">Forms</a>
+    </div>
+</body>
+</html>

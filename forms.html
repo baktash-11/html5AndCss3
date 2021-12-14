@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>forms</title>
+
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+            color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #listContent{
+            text-align: left;
+            color: darkslategray;
+            line-height: 2em;
+            width: 800px;
+            margin: auto;
+            border-radius: 20px;
+            border: 1px solid darkslategray;
+            padding-top: 20px;
+
+        }
+        #structure{
+            margin: auto;
+            line-height: 2em;
+            width: 800px;
+            padding-top: 30px;
+            margin-top: 30px;
+            background-color: gainsboro;
+            color: darkslategray;
+            border-radius: 20px;
+            text-align: left;
+            padding-bottom: 50px;
+            margin-bottom: 40px;
+        }
+       #structure li, #listContent li, input{
+           margin-left: 30px;
+       }
+      
+       #title{
+           margin-right: 10%;
+           padding-top: 20px;
+           color: rgba(105, 105, 105, 0.705);
+       }
+       
+       
+    </style>
+</head>
+<body>
+    <h1 id="heading1">Welcome Forms in the HTML</h1>
+    
+    <div id="structure">
+        <ol>
+            <p id="heading2">FORM CONTROLS</p>
+            <li>text-input(single-line)</li>
+            <li>Password-input(single-line)</li>
+            <li>Text area (multi-line)</li>
+            <li>Raio buttons</li>
+            <li>Checkboxes </li>
+            <li>Drop-down boxes</li>
+            <li>Submit buttons</li>
+            <li>Image buttons</li>
+            <li>File upload</li>
+            <li>etc...</li>
+
+
+
+        </ol>
+
+
+    </div>
+    
+    <div id="structure">
+        <p id="heading2">Form Structure</p>
+        <ul>
+            <li>From controls always live nside Frm element, this element always cary the acction attriubte and usualy will have a method and id attibute.</li>
+            <li>Every form element requires an <em>Action</em> attribute. Its value is the URL for the page on the server that will receive the information.</li>
+            <li>Froms can be sent using oe of tow <em>methods:</em> get or post
+                <ol>
+                    <li>With the get method, the values from the form are added to the end of the URL specified in the action attribute. the get method is ideal for: 
+                        <ul>
+                            <li>short forms (such as search boxes)</li>
+                            <li>when you are just retrieving data from the web server (not sending information that shoud be added to or deleted from a database)</li>
+                            
+                        </ul>
+                    </li>
+                    <li>With post method the values are sent in what are knows as HTP headers. As rule of thumb you shoud use the Post method if your for:
+                        <ul>
+                            <li>allow users to upload a file</li>
+                            <li>is very long</li>
+                            <li>contains senstive data(e.g. passwords)</li>
+                            <li>adds information to, or deletes information from, a database</li>
+                        </ul>
+                    </li>
+                    
+                </ol>
+               
+                
+            </li>
+           
+            
+            <li>If the method attribute is not used, the data will be sent using the get method</li>
+            <li>We look at the id attribute.. but the value is used to identify the from distinctly from other elements on the page(and is often used by scripts--such as those that check you have entered information into fields that require values).</li>
+        </ul>
+
+    </div>
+    <div id="structure">
+        
+        <p id="heading2">Tnext Input</p>
+        <div class="center">
+            <form action="http://www.example.com/login.php" id="textInput" >
+               
+                <label for="userName">User Name</label> 
+                <input placeholder="Type your user-name" type="text" name="userName" id="userName" maxlength="30"> <br>
+               
+                <label for="password">Password&nbsp;</label>
+                <input placeholder="***************" type="password" name="password" id="password" maxlength="30"><br>
+               
+                <label for="message">Your Message&nbsp;</label>
+                <textarea placeholder="Type your message" name="message" id="message" maxlength="200"></textarea><br>
+                <!-- <img src="https://picsum.photos/id/124/800/40" alt=""> -->
+                
+                <p id="heading2">Radio Button input</p>
+                <div > <p id="title"> Please select your favorite genre:</p>
+                    
+                    <label for="rock">Rock</label>
+                    <input type="radio" name="genre" value="rock" id="rock" /> <br>
+                    <label for="pop">Pop</label>
+                    <input type="radio" name="genre" value="pop" id="pop" /> <br>
+                    <label for="jazz">Jazz</label>
+                    <input type="radio" name="genre" value="jazz" id="jazz" />
+                </div>
+                <!-- <img src="https://picsum.photos/id/106/800/40" alt=""> -->
+                
+                <p id="heading2">Checkbox input</p>
+
+                <div > <p id="title"> Please select your favorite music service(s):</p>
+                    
+                    <label for="rtune">iTunes&nbsp; </label>
+                    <input type="checkbox" name="rtune" value="rtune" id="rtune" /> <br>
+                    <label for="lastfm">Last.fm</label>
+                    <input type="checkbox" name="lastfm" value="lastfm" id="lastfm" /> <br>
+                    <label for="spotify">Spotify&nbsp; </label>
+                    <input type="checkbox" name="spotify" value="spotify" id="spotify" />
+                </div>
+
+
+                <!-- <img src="https://picsum.photos/id/530/800/40" alt=""> -->
+
+                <p id="heading2">Drop Down List Box</p>
+                <p id="title">What device do you listen to music on?</p>
+                <select name="devices">
+                    <option value="defalt"></option>
+                    <option value="tv">TV</option>
+                    <option value="ipod">iPod</option>
+                    <option value="radio">Radio</option>
+                    <option value="computer">Computer</option>
+                    <option value="laptop" selected>Lap-top</option>
+                </select>
+                <br><br>
+                <!-- <img src="https://picsum.photos/id/1011/800/40" alt=""> -->
+
+
+                <h1 id="heading2">Multiple Select Box</h1>
+                <p id="title">Do you play any of the following instruments?
+                    (You can select more than one option by holding
+                    down control on a PC or command key on a Mac
+                    while selecting different options.)
+                </p>
+                <select name="instruments" size="5"  multiple="multiple" id="multiple">
+                    <option value="guitar" >  Guitar</option>
+                    <option value="drums">Drums</option>
+                    <option value="keyboard">Keyboard</option>
+                    <option value="bass" selected>Bass</option>
+                    <option value="flute">Flute</option>
+                </select>
+                <br><br>
+        
+        
+        
+            </form>
+            <img src="https://picsum.photos/id/1011/800/40" alt="">
+
+        </div>
+         
+        <ul>
+            <li>The input element is used to create several differnet form controls. The value of the type attribute determines what kind of input they  will be creating.</li>
+            <li>Type = "text": is used when the type attribute has value of text, it creates a single line text input.</li>
+            <li>Name: When users enter information into a form, th server needs to know which form control each piece of data was entered into. (for example, in a login form, the server needs to know what has been entered as the username and what hassben given as the password.) Therefore, eachform control requires a name attribute. The value of ths attirbute identifies the form control and is sent along with the information they enter the server.</li>
+            <li>The size attribute should not be on new forms.</li>
+        </ul>
+
+            <img src="https://picsum.photos/id/111/800/40" alt=""> 
+        <ul>
+            <li>Maxlength attribute can be used to limit the number of charachters a user may enter into the text field. Its value is number of character the may enter.</li>
+            <li>When the type attirbute has a value of password it creates a text box that acts just like a single-line text input, except the characters are blocked out. they are hidden in this way so that if someone is looking over the user's sholder, they can not see senstive data sucha password!</li>
+            <li>Textarea element is used to create a multi0line text input. Unlike other input elements this is not an empty element. it should therefor have an opening and a closing tag</li>
+
+        </ul>
+        
+        <img src="https://picsum.photos/id/120/800/40" alt="">
+        <ul>
+            <li>Radio buttons allow users to pic just one of a number option!
+                <ol>
+                    <li>Name attribute is sent to the server with the value of the option the user selected,</li>
+                    <li>value attirbute indicates the value that is sent to the server for the selected option.</li>
+                    <li>Chcked attribut can be used to indicate which value (if any) shold be selected when the page loads.</li>
+        
+        
+                </ol>
+            </li>
+            <li>Checkboxes allow users to select (and unselect one or more options in answer to a question.
+                <ol>
+                    <li>Name attribute is sent to the server with the value of the option the user selected,</li>
+                    <li>value attirbute indicates the value that is sent to the server for the selected option.</li>
+                    <li>Chcked attribut can be used to indicate which value (if any) shold be selected when the page loads.</li>
+        
+                </ol>
+        
+            </li>
+        </ul>
+         <img src="https://picsum.photos/id/137/800/40" alt="">
+        <ul>
+            <li>A drop down list box(also know as select box) allows user to select one option from a drop down list. the <span><</span>select<span>></span> is used to create a dropdown list box. It contains two more <span><</span>option<span>></span>
+                <ol>
+                    <li>Name attribute is sent to the server with the value whihc user selected,</li>
+                    <li>The <span><</span>option<span>></span> element is used to specify the options that the user can select from. the worlds between the opening <span><</span>option<span>></span> and closeing <span> <<span>/</span></span>otpion<span>></span> tags will be shown to the users in the drop down box.</li>
+                    <li>value attirbute indicates the value that is sent to the server for the selected option.</li>
+                    <li>the Selected attribute can be used to indate the option that shoud be slected when page loads.</li>
+                </ol>
+            </li>
+
+
+        </ul>
+        <img src="https://picsum.photos/id/1058/800/40" alt="fire">
+           
+        
+       
+
+
+    </div>
+    
+     <!-- <xmp><select></xmp> -->
+    <!-- <img src="https://picsum.photos/id/548/600/400" alt="">
+    <img src="https://picsum.photos/id/1011/600/400" alt="">
+    <img src="https://picsum.photos/id/1012/600/400" alt="">
+    <img src="https://picsum.photos/id/334/600/400" alt="">
+    <img src="https://picsum.photos/id/550/600/400" alt="">
+    <img src="https://picsum.photos/id/602/600/400" alt="">
+    <img src="https://picsum.photos/id/633/600/400" alt="">
+    <img src="https://picsum.photos/id/64/600/400" alt="">
+    <img src="https://picsum.photos/id/660/600/400" alt="fire">
+    <img src="https://picsum.photos/id/823/600/400" alt="">
+    <img src="https://picsum.photos/id/832/600/400" alt="">
+    <img src="https://picsum.photos/id/839/600/400" alt=""> -->
+    <!-- <img src="https://picsum.photos/id/1058/600/400" alt=""> -->
+    
+    <h1 id="heading2">Welcome Forms in the HTML</h1>
+    <div id="links">
+        <a href="./index.html" >Index</a>
+        <a href="./table.html" >table</a>
+        <a href="./structure.html" >Structure</a>
+        <a href="./examples.html">Example</a>
+    </div>
+</body>
+</html>

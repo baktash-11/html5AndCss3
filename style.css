@@ -1,0 +1,151 @@
+body {
+  width: 80%;
+  background-color: rgb(29, 46, 46);
+  margin: auto;
+}
+#mainBody {
+  padding: 20px;
+  margin-top: 10%;
+  background-color: azure;
+  border: 2px solid white;
+  border-radius: 200px;
+  align-self: center;
+}
+#heading1 {
+  text-align: center;
+  font-family: "Tangerine", serif;
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: darkslategrey;
+}
+#heading2 {
+  text-align: center;
+  font-family: "Tangerine", serif;
+  font-size: 30px;
+  color: darkslategrey;
+  padding-bottom: 20px;
+}
+
+#mainBody img {
+  display: block;
+  align-content: center;
+  border-radius: 50%;
+  margin: auto;
+  width: 20%;
+}
+#btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-family: "Tangerine", serif;
+  font-size: 50px;
+}
+
+#btn:hover {
+  color: rgb(15, 177, 177);
+}
+
+#output {
+  height: 70px;
+  display: block;
+  color: rgb(15, 177, 177);
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0);
+  border-radius: 100px;
+  width: 25%;
+  padding-top: 35px;
+  font-family: "Tangerine", sans-serif;
+}
+
+#links a {
+  color: white;
+  background-color: rgba(27, 23, 53, 0.466);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
+
+#links a:hover {
+  color: aquamarine;
+  background-color: rgba(128, 128, 128, 0);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  border: 1px solid aquamarine;
+}
+
+/* form input */
+.center{
+    /* margin: auto; */
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.center input , select {
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(70, 131, 151, 0.671);
+    text-align: center;
+    width: 30%;
+    margin-top: 10px;
+    
+}
+.center textarea{
+  height: 100px;
+    border-radius: 20px;
+    border: 2px solid rgba(70, 131, 151, 0.671);
+    text-align: center;
+    width: 30%;
+    margin-top: 10px;
+}
+.center label{
+    padding: 0 20px;
+    border-radius: 20px;
+   
+    
+}
+#multiple{
+  padding-top: 20px;
+  height: 130px;
+  overflow: hidden;
+  
+}
+
+/* Table */
+table,th,td {
+  border: 1px solid darkslategrey;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 10px 20px;
+}
+hr{
+    border:none;
+    
+    border-top: 3px dotted darkslategray;
+    width: 50%;
+
+}
+ul{
+    list-style-type: disc;
+}
+
+/* table#alter tr:nth-child(even) {
+  background-color: #eee;
+}
+table#alter tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#alter th {
+  color: white;
+  background-color: gray;
+} */
