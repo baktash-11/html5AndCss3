@@ -278,26 +278,125 @@
                     <label for="phone">Mobile</label><br>
                     <input type="tel" id="phone" name="phone"><br>
                     <label for="tel">Telephone</label><br>
-                    <input type="tel" id="tel" name="tel">
+                    <input type="tel" id="tel" name="tel"><br>
+                    
                 </fieldset>
+                <fieldset>
+                    <legend>New Input Types in HTML5</legend>
+                    <label for="date">Date</label><br>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="search">Search:</label><br>
+                    <input type="search" id="search" name="search" value="search">
+                    <button id="search">Check</button>
+                    
+                    <br>
+
+                </fieldset>
+               
              </form>
 
         </div>
       
-        
+        <ul>
+            <li>We can group related form controls togather inside the <span><</span>filedset <span>></span> element. it will be helpful with longer forms. </li>
+            <li>The legend element can come directly after the opening fieldset tag and contains a caption to indenitfy the puropse of that group of form</li>
+            <li>HTML5 interduces new form controls to stanardize the way taht some information is gathered.</li>
+            <li>if you are asking user for a date, you should user an input element with given type a value of date</li>
+
+
+        </ul>
+        <br><br>
+
+        <h1 id="heading2">A from Example</h1>
+        <form action="http://www.example.com/review.php" method="get">
+            <fieldset>
+                <legend>
+                    Your Details:
+                </legend>
+                <label>
+                    Name:
+                    <input type="text" name="name" size="30" maxlength="100">
+                </label>
+                <br />
+                <label>
+                    Email:
+                    <input type="email" name="email" size="30" maxlength="100">
+                </label>
+                <br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>
+                    Your Review:
+                </legend>
+                <p>
+                    <label for="hear-about">
+                        How did you hear about us?
+                    </label>
+                    <select name="referrer" id="hear-about">
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="advert">Advert</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                   
+                    Would you visit again?
+                    <br />
+                    <label>
+                        <input type="radio" name="rating" value="yes" />
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="no" />
+                        No
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="maybe" />
+                        Maybe
+                    </label>
+                </p>
+                <p>
+                    <label for="comments">
+                        Comments:
+                    </label>
+                    <br />
+                    <textarea rows="4" cols="40" id="comments">
+                    </textarea>
+                </p>
+                <label>
+                    <input type="checkbox" name="subscribe" checked="checked" />
+                    Sign me up for email updates
+                </label>
+                <br />
+                <input type="submit" value="Submit review" />
+            </fieldset>
+        </form>
        
-
-
+        <h1 id="heading2">using I frame</h1>
+       
+        <iframe
+            width="450"  height="350" scrolling="on" style="margin-left: 22%; border-radius: 20px;"
+            src="http://maps.google.ca/maps?q=moma+new+york &amp;output=embed" >
+        </iframe>
+        
     </div>
+        
+        
+        
+    <p id="title" style="margin-left: 10%;">
+        Its jsut for personal practice, i have used id in many places in a page, i shouldnt have, once again its just for personal (HTML) practice, I used some CSS just to play around.  
+    </p>
     
-     
-    
-    <h1 id="heading2">Welcome Forms in the HTML</h1>
+    <p id="title" >by &lt;/Baktash &gt; Sana &cent; &lsquo; &pound; &amp; &times; &copf; &copy; &reg; &trade; &divide; </p>
     <div id="links">
         <a href="./index.html" >Index</a>
         <a href="./table.html" >table</a>
         <a href="./structure.html" >Structure</a>
         <a href="./examples.html">Example</a>
     </div>
+
+    
 </body>
 </html>

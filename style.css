@@ -174,18 +174,12 @@ ul{
 #groupForm{
   display: inline-block;
   margin-left: 35%;
- 
-  
-  
+  background-color: darkslategray;
+  color: whitesmoke;
 }
 
                
-#groupForm fieldset{
-  
-  background-color: whitesmoke;
-  color: black;
-  
-}
+
 /* table#alter tr:nth-child(even) {
   background-color: #eee;
 }

@@ -24,7 +24,7 @@ console.log(myCar.toString());
 console.log(myCar instanceof Car);
 console.log(myCar instanceof Vehicle);
 console.log("===========================Default, rest and Spread===========================");
-console.log("===========================Default Example===========================");
+console.log("===========================Default parameter value Example===========================");
 function add(x, y =0){/**y would be set to 0 if a value is not passed */
     return x + y; 
 }
